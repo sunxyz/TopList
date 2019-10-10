@@ -658,7 +658,7 @@ func (spider Spider) GetDBMovie() []map[string]interface{} {
 		text := s.Find("p").Text()
 		if len(text) != 0 {
 			if boolUrl {
-				allData = append(allData, map[string]interface{}{"title": string(text), "url": "https://www.huxiu.com" + url})
+				allData = append(allData, map[string]interface{}{"title": string(text), "url": "https://movie.douban.com/" + url})
 			}
 		}
 	})
